@@ -1,0 +1,149 @@
+/* About Page Specific Styles */
+#about,
+#team,
+#values,
+#achievements {
+    background-color: var(--background-color);
+    padding: 3rem 0;
+}
+
+#about h2,
+#team h2,
+#values h2,
+#achievements h2 {
+    text-align: center;
+    color: var(--primary-color);
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+#about p,
+#team p,
+#values p,
+#achievements p {
+    text-align: center;
+    color: var(--text-color);
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+/* Team Section */
+#team .team-members {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.team-member {
+    background-color: white;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.team-member:hover {
+    transform: translateY(-10px);
+}
+
+.team-member-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+.team-member h3 {
+    color: var(--primary-color);
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.team-member p {
+    color: var(--secondary-color);
+    font-size: 0.9rem;
+}
+
+/* Core Values Section */
+#values ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 1rem;
+}
+
+#values li {
+    font-size: 1rem;
+    color: var(--text-color);
+    margin-bottom: 0.8rem;
+}
+
+#values strong {
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+/* Achievements Section */
+#achievements ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+#achievements li {
+    font-size: 1rem;
+    color: var(--text-color);
+    margin-bottom: 0.8rem;
+}
+
+#achievements strong {
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+/* Call to Action Button */
+.cta-button {
+    background-color: var(--accent-color);
+    color: white;
+    padding: 1.2rem 2.5rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.3rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 2rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cta-button:hover {
+    background-color: var(--primary-color);
+}
+
+.footer {
+    background-color: var(--secondary-color);
+    color: white;
+    text-align: center;
+    padding: 1.5rem 0;
+}
+
+@media (max-width: 768px) {
+    .nav-link {
+        font-size: 1rem;
+    }
+
+    .cta-button {
+        font-size: 1.1rem;
+        padding: 1rem 2rem;
+    }
+
+    .team-member {
+        width: 100%;
+        padding: 1.5rem;
+    }
+}

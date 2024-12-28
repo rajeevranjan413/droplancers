@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Droplancer - Empowering Businesses</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/home.css">
+</head>
+
+<body>
+    <!-- Header and Navigation Section -->
+    <header class="header">
+        <h1 class="header-title">
+            <a href="/">Droplancer</a>
+        </h1>
+        <nav class="nav">
+            <a href="./services.html" class="nav-link">Services</a>
+            <a href="./about.html" class="nav-link">About Us</a>
+            <a href="./contact.html" class="nav-link">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section with Slider -->
+    <section class="hero">
+        <div class="hero-slider">
+            <div class="hero-slide">
+                <div class="hero-content">
+                    <h2 class="hero-title">Empowering Businesses</h2>
+                    <p class="hero-text">From digital marketing to bespoke app development, we provide tailored IT
+                        solutions to meet your business needs.</p>
+                </div>
+                <img src="https://via.placeholder.com/500x300" alt="Hero Image 1" class="hero-img">
+            </div>
+            <div class="hero-slide">
+                <div class="hero-content">
+                    <h2 class="hero-title">Cutting-Edge Technology</h2>
+                    <p class="hero-text">Leveraging the latest tech innovations to drive business growth and success.
+                    </p>
+                </div>
+                <img src="https://via.placeholder.com/500x300" alt="Hero Image 2" class="hero-img">
+            </div>
+            <div class="hero-slide">
+                <div class="hero-content">
+                    <h2 class="hero-title">Tailored Solutions</h2>
+                    <p class="hero-text">Custom strategies designed to address your unique business challenges.</p>
+                </div>
+                <img src="https://via.placeholder.com/500x300" alt="Hero Image 3" class="hero-img">
+            </div>
+        </div>
+        <div class="slider-buttons">
+            <button class="slider-button" id="prevBtn">&#10094;</button>
+            <button class="slider-button" id="nextBtn">&#10095;</button>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section">
+        <div class="container">
+            <h2 class="section-title">Our Services</h2>
+            <div class="services">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3 class="service-card-title">Web Development</h3>
+                    <p>Crafting responsive, engaging websites that enhance user experience and drive results.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-bullhorn"></i>
+                    </div>
+                    <h3 class="service-card-title">Digital Marketing</h3>
+                    <p>Boost your brand visibility and engagement through targeted online marketing strategies.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3 class="service-card-title">App Development</h3>
+                    <p>Building scalable, user-centric mobile apps to bring your business to the next level.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h3 class="service-card-title">Graphic Design</h3>
+                    <p>Creating stunning visuals to strengthen your brand identity and communicate your message
+                        effectively.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonial Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="testimonial-content">
+            <h2 class="section-title">What Our Clients Say</h2>
+            <div class="testimonial-cards">
+                <div class="testimonial-card">
+                    <img src="path-to-client-image.jpg" alt="Client Name" class="client-img" />
+                    <p class="client-quote">"Droplancer has greatly helped us improve our digital presence and online
+                        solutions. The services are top-notch!"</p>
+                    <h3 class="client-name">John Doe</h3>
+                    <p class="client-position">CEO, XYZ Company</p>
+                </div>
+                <div class="testimonial-card">
+                    <img src="path-to-client-image.jpg" alt="Client Name" class="client-img" />
+                    <p class="client-quote">"The team at Droplancer provided amazing solutions tailored to our needs. We
+                        saw significant growth after partnering with them!"</p>
+                    <h3 class="client-name">Jane Smith</h3>
+                    <p class="client-position">Marketing Director, ABC Ltd.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="cta">
+        <div class="container">
+            <h2 class="section-title">Ready to Elevate Your Business?</h2>
+            <button class="cta-button">Contact Us Today</button>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <p>&copy; 2024 Droplancer. All Rights Reserved.</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        const slider = document.querySelector('.hero-slider');
+        const slides = document.querySelectorAll('.hero-slide');
+        const prevBtn = document.getElementById('prevBtn');
+        const nextBtn = document.getElementById('nextBtn');
+
+        let currentIndex = 0;
+
+        const updateSlider = () => {
+            slider.style.transform = `translateX(-${currentIndex * 100}%)`;
+        };
+
+        nextBtn.addEventListener('click', () => {
+            currentIndex = (currentIndex + 1) % slides.length;
+            updateSlider();
+        });
+
+        prevBtn.addEventListener('click', () => {
+            currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+            updateSlider();
+        });
+
+        // Optional: Auto-slide functionality
+        setInterval(() => {
+            currentIndex = (currentIndex + 1) % slides.length;
+            updateSlider();
+        }, 5000);
+    </script>
+</body>
+
+</html>

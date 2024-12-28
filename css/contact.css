@@ -1,0 +1,101 @@
+/* Contact Page Styles */
+.contact-form {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form .form-group {
+    margin-bottom: 1.5rem;
+}
+
+.contact-form label {
+    display: block;
+    font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 0.8rem;
+    margin-top: 0.5rem;
+    border: 1px solid var(--secondary-color);
+    border-radius: 8px;
+}
+
+.contact-form textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 1rem 0;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: var(--accent-color);
+}
+
+/* Contact Details */
+.contact-details {
+    margin-top: 3rem;
+}
+
+.contact-details h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.contact-details p {
+    margin: 0.5rem 0;
+}
+
+.social-links a {
+    margin-right: 1rem;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.social-links a:hover {
+    color: var(--accent-color);
+}
+
+/* FAQ Section */
+.faq {
+    margin-top: 3rem;
+}
+
+.faq h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.faq-item {
+    margin-top: 1rem;
+}
+
+.faq-item h4 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.faq-item p {
+    margin-top: 0.5rem;
+}
+
+/* Google Map */
+.google-map iframe {
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 2rem;
+    max-width: 100%;
+}
