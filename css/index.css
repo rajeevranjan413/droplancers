@@ -1,12 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=IBM+Plex+Sans:wght@500;700&display=swap");
+
 :root {
-    --primary-color: #007BFF;
-    --secondary-color: #6C757D;
-    --background-color: #F8F9FA;
-    --text-color: #212529;
+    --primary-color: #1e2641;
+    --secondary-color: #1e517e;
+    --background-color: #f1f2fc;
+    --text-color: #fff;
+    --dark-text-color: #333333;
+    /* New dark text color */
     --accent-color: #FFC107;
+    --border-color: #3a456a;
     --max-width: 1400px;
-    --header-height: 80px
+    --header-height: 70px;
+    --font-primary: "IBM Plex Sans", sans-serif;
+    --font-secondary: "Merriweather", serif;
 }
+
+
 
 * {
     margin: 0;
@@ -16,9 +25,16 @@
 }
 
 body {
+    font-family: var(--font-primary);
+    font-weight: 500;
+    font-size: 16px;
     background-color: var(--background-color);
     color: var(--text-color);
-    line-height: 1.6;
+    height: 100vh;
+
+    @media (max-width: 780px) {
+        height: auto;
+    }
 }
 
 a {
@@ -98,12 +114,6 @@ a {
     background-color: var(--primary-color);
 }
 
-.footer {
-    background-color: var(--secondary-color);
-    color: white;
-    text-align: center;
-    padding: 1.5rem 0;
-}
 
 @media (max-width: 768px) {
     .nav-link {
