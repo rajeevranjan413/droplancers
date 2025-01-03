@@ -15,8 +15,6 @@
     --font-secondary: "Merriweather", serif;
 }
 
-
-
 * {
     margin: 0;
     padding: 0;
@@ -114,7 +112,6 @@ a {
     background-color: var(--primary-color);
 }
 
-
 @media (max-width: 768px) {
     .nav-link {
         font-size: 1rem;
@@ -124,4 +121,175 @@ a {
         font-size: 1.1rem;
         padding: 1rem 2rem;
     }
+}
+
+/* Footer Styling */
+footer {
+    background-color: var(--primary-color);
+    position: relative;
+    width: 100%;
+    /* padding: 60px 60px 0px 60px; */
+    border-radius: 30px 30px 0px 0px;
+}
+
+/* 
+@media (max-width: 1260px) {
+    footer {
+        width: 100%;
+    }
+}
+
+@media (max-width: 780px) {
+    footer {
+        margin: 40px auto;
+    }
+} */
+
+/* Footer Container */
+footer .footer-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 60px 0px 60px;
+}
+
+@media (max-width: 780px) {
+    footer .footer-container {
+        flex-direction: column;
+    }
+}
+
+/* Footer Section */
+footer .footer-container .footer-section {
+    margin: 0 60px;
+}
+
+@media (max-width: 960px) {
+    footer .footer-container .footer-section {
+        margin: 0 30px;
+    }
+}
+
+footer .footer-container .footer-section h3 {
+    font-family: var(--font-primary);
+    font-weight: 700;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+footer .footer-container .footer-section ul {
+    list-style: none;
+}
+
+footer .footer-container .footer-section ul li {
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+/* Newsletter Section */
+footer .footer-container .newsletter {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+footer .footer-container .newsletter h3 {
+    margin: 30px 0;
+    font-family: var(--font-primary);
+    font-weight: 500;
+    font-size: 16px;
+}
+
+footer .footer-container .newsletter form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 50px;
+}
+
+@media (max-width: 1150px) {
+    footer .footer-container .newsletter form {
+        flex-direction: column;
+    }
+}
+
+footer .footer-container .newsletter form input[type="email"] {
+    max-width: 224px;
+    width: 100%;
+    font-family: var(--font-primary);
+    font-weight: 500;
+    font-size: 16px;
+    padding: 10px;
+    border: 2px solid var(--font-primary);
+    border-radius: 5px;
+    background: var(--primary-color);
+    color: var(--dark-text-color);
+    outline: none;
+    height: 51px;
+}
+
+@media (max-width: 780px) {
+    footer .footer-container .newsletter form input[type="email"] {
+        max-width: unset;
+    }
+}
+
+footer .footer-container .newsletter form input[type="email"]::placeholder {
+    color: black;
+}
+
+footer .footer-container .newsletter form button {
+    font-family: var(--font-primary);
+    font-weight: 700;
+    font-size: 16px;
+    padding: 0 10px;
+    height: 51px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Newsletter Heading */
+footer .footer-container .newsletter h4 {
+    font-family: var(--font-primary);
+    font-weight: 500;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+/* Social Icons */
+footer .footer-container .newsletter .social-icons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+footer .footer-container .newsletter .social-icons a,
+footer .footer-container .newsletter .social-icons a:visited {
+    color: black;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+footer .footer-container .newsletter .social-icons a .fa-facebook-f,
+footer .footer-container .newsletter .social-icons a .fa-twitter,
+footer .footer-container .newsletter .social-icons a .fa-instagram {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+    height: 46px;
+    width: 46px;
+}
+
+footer .footer-container .newsletter .social-icons a .fa-facebook-f {
+    background-color: #4c6ea7;
+}
+
+footer .footer-container .newsletter .social-icons a .fa-twitter {
+    background-color: #4297c4;
+}
+
+footer .footer-container .newsletter .social-icons a .fa-instagram {
+    background: linear-gradient(45deg, #ffb73d 0%, #c47067 40%, #9d23e4 100%);
 }
