@@ -173,28 +173,28 @@
 
                         <ul class="benefit-list mt-6 space-y-6">
                             <li
-                                class="benefit-list_item flex items-center text-[var(--dark-text-color)] hover:text-[var(--primary-color)] transition-all">
+                                class="benefit-list_item flex items-center text-[var(--dark-text-color)]  transition-all">
                                 <span class="arrow-icon text-[var(--primary-color)] mr-3">
                                     <i class="fas fa-check-circle"></i> <!-- Check circle icon -->
                                 </span>
                                 <span class="list-text text-lg">High Quality Design Service Provider.</span>
                             </li>
                             <li
-                                class="benefit-list_item flex items-center text-[var(--dark-text-color)] hover:text-[var(--primary-color)] transition-all">
+                                class="benefit-list_item flex items-center text-[var(--dark-text-color)]  transition-all">
                                 <span class="arrow-icon text-[var(--primary-color)] mr-3">
                                     <i class="fas fa-check-circle"></i> <!-- Check circle icon -->
                                 </span>
                                 <span class="list-text text-lg">Clean &amp; Bug-Free Code.</span>
                             </li>
                             <li
-                                class="benefit-list_item flex items-center text-[var(--dark-text-color)] hover:text-[var(--primary-color)] transition-all">
+                                class="benefit-list_item flex items-center text-[var(--dark-text-color)]  transition-all">
                                 <span class="arrow-icon text-[var(--primary-color)] mr-3">
                                     <i class="fas fa-check-circle"></i> <!-- Check circle icon -->
                                 </span>
                                 <span class="list-text text-lg">24 Hours Support.</span>
                             </li>
                             <li
-                                class="benefit-list_item flex items-center text-[var(--dark-text-color)] hover:text-[var(--primary-color)] transition-all">
+                                class="benefit-list_item flex items-center text-[var(--dark-text-color)]  transition-all">
                                 <span class="arrow-icon text-[var(--primary-color)] mr-3">
                                     <i class="fas fa-check-circle"></i> <!-- Check circle icon -->
                                 </span>
@@ -568,31 +568,32 @@
     <!-- Footer Section -->
     <footer class="bg-primary-color relative w-full rounded-t-3xl">
         <div class="flex justify-between flex-wrap p-16">
+
             <div class="space-y-8">
-                <h3 class="font-bold text-sm mb-4">INFO</h3>
+                <h3 class="font-bold text-sm mb-4">SERVICES</h3>
                 <ul class="space-y-2">
-                    <li class="cursor-pointer">Formats</li>
-                    <li class="cursor-pointer">Pricing</li>
-                    <li class="cursor-pointer">Compression</li>
-                    <li class="cursor-pointer">FAQ</li>
-                    <li class="cursor-pointer">Status</li>
+                    <li><a href="#" class="">Web Development</a></li>
+                    <li><a href="#" class="">Mobile App Development</a></li>
+                    <li><a href="#" class="">Cloud Solutions</a></li>
+                    <li><a href="#" class="">IT Consulting</a></li>
+                </ul>
+            </div>
+            <div class="space-y-8">
+                <h3 class="font-bold text-sm mb-4">ABOUT US</h3>
+                <ul class="space-y-2">
+                    <li><a href="#" class="">Our Story</a></li>
+                    <li><a href="#" class="">Leadership</a></li>
+                    <li><a href="#" class="">Careers</a></li>
+                    <li><a href="#" class="">Partnerships</a></li>
                 </ul>
             </div>
             <div class="space-y-8">
                 <h3 class="font-bold text-sm mb-4">RESOURCES</h3>
                 <ul class="space-y-2">
-                    <li class="cursor-pointer">Developer API</li>
-                    <li class="cursor-pointer">Tools</li>
-                    <li class="cursor-pointer">Blog</li>
-                </ul>
-            </div>
-            <div class="space-y-8">
-                <h3 class="font-bold text-sm mb-4">COMPANY</h3>
-                <ul class="space-y-2">
-                    <li class="cursor-pointer">About Us</li>
-                    <li class="cursor-pointer">Terms of Service</li>
-                    <li class="cursor-pointer">Privacy</li>
-                    <li class="cursor-pointer">Sustainability</li>
+                    <li><a href="#" class="">Case Studies</a></li>
+                    <li><a href="#" class="">Blog</a></li>
+                    <li><a href="#" class="">White Papers</a></li>
+                    <li><a href="#" class="">FAQs</a></li>
                 </ul>
             </div>
             <div class="flex flex-col space-y-6">
@@ -618,11 +619,14 @@
                 </div>
             </div>
         </div>
-        <div class="text-center text-white py-4 border-t border-white mt-16">
-            <p class="text-sm">
-                Copyright © <span id="current-year">{{ new Date().getFullYear() }}</span> codekingtechnologies. All
-                Rights Reserved.
-            </p>
+        <div class="footer-bar bg-[var(--primary-color)] text-center text-gray-700 py-4 border-t mt-16">
+            <div class="container mx-auto">
+                <p class="text-sm">
+                    Copyright © <span id="current-year">
+                        <script>document.write(new Date().getFullYear());</script>
+                    </span> CodeKing Technologies. All Rights Reserved.
+                </p>
+            </div>
         </div>
     </footer>
 
