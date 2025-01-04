@@ -566,71 +566,66 @@
 
 
     <!-- Footer Section -->
-    <footer>
-        <!-- <div class="relative z-10 top-[-40px]">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 100">
-                <path fill="#1e2641"
-                    d="M1260,1.65c-60-5.07-119.82,2.47-179.83,10.13s-120,11.48-180,9.57-120-7.66-180-6.42c-60,1.63-120,11.21-180,16a1129.52,1129.52,0,0,1-180,0c-60-4.78-120-14.36-180-19.14S60,7,30,7H0v93H1440V30.89C1380.07,23.2,1319.93,6.15,1260,1.65Z">
-                </path>
-            </svg>
-        </div> -->
-
-        <div class="footer-container">
-            <div class="footer-section">
-                <h3>INFO</h3>
-                <ul>
-                    <li>Formats</li>
-                    <li>Pricing</li>
-                    <li>Compression</li>
-                    <li>FAQ</li>
-                    <li>Status</li>
+    <footer class="bg-primary-color relative w-full rounded-t-3xl">
+        <div class="flex justify-between flex-wrap p-16">
+            <div class="space-y-8">
+                <h3 class="font-bold text-sm mb-4">INFO</h3>
+                <ul class="space-y-2">
+                    <li class="cursor-pointer">Formats</li>
+                    <li class="cursor-pointer">Pricing</li>
+                    <li class="cursor-pointer">Compression</li>
+                    <li class="cursor-pointer">FAQ</li>
+                    <li class="cursor-pointer">Status</li>
                 </ul>
             </div>
-            <div class="footer-section">
-                <h3>RESOURCES</h3>
-                <ul>
-                    <li>Developer API</li>
-                    <li>Tools</li>
-                    <li>Blog</li>
+            <div class="space-y-8">
+                <h3 class="font-bold text-sm mb-4">RESOURCES</h3>
+                <ul class="space-y-2">
+                    <li class="cursor-pointer">Developer API</li>
+                    <li class="cursor-pointer">Tools</li>
+                    <li class="cursor-pointer">Blog</li>
                 </ul>
             </div>
-            <div class="footer-section">
-                <h3>COMPANY</h3>
-                <ul>
-                    <li>About Us</li>
-                    <li>Terms of Service</li>
-                    <li>Privacy</li>
-                    <li>Sustainability</li>
+            <div class="space-y-8">
+                <h3 class="font-bold text-sm mb-4">COMPANY</h3>
+                <ul class="space-y-2">
+                    <li class="cursor-pointer">About Us</li>
+                    <li class="cursor-pointer">Terms of Service</li>
+                    <li class="cursor-pointer">Privacy</li>
+                    <li class="cursor-pointer">Sustainability</li>
                 </ul>
             </div>
-            <div class="newsletter">
-                <h3>Subscribe to our email newsletter</h3>
-
-                <form novalidate>
-                    <input type="email" placeholder="Your email" required>
-                    <button type="submit">SUBSCRIBE</button>
+            <div class="flex flex-col space-y-6">
+                <h3 class="font-medium text-lg">Subscribe to our email newsletter</h3>
+                <form class="flex flex-wrap gap-4 items-center">
+                    <input type="email" placeholder="Your email" required
+                        class="w-56 sm:w-full border-2 border-dark-text-color rounded-md bg-primary-color text-dark-text-color py-2 px-4 outline-none focus:ring-2 focus:ring-dark-text-color" />
+                    <button type="submit"
+                        class="bg-black text-white font-bold py-2 px-6 rounded-md hover:bg-gray-800">SUBSCRIBE</button>
                 </form>
-                <h4>Follow us</h4>
-                <div class="social-icons">
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab   
-       fa-instagram"></i></a>
+                <h4 class="font-medium text-base">Follow us</h4>
+                <div class="flex space-x-4">
+                    <a href="#" class="flex justify-center items-center w-12 h-12 rounded-md bg-blue-600 text-white">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="flex justify-center items-center w-12 h-12 rounded-md bg-sky-400 text-white">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#"
+                        class="flex justify-center items-center w-12 h-12 rounded-md bg-gradient-to-br from-yellow-400 via-pink-500 to-purple-600 text-white">
+                        <i class="fab fa-instagram"></i>
+                    </a>
                 </div>
             </div>
-
         </div>
-        <div class="footer-bar text-center text-white py-4 border-t mt-16">
-            <div class="container mx-auto px-4">
-                <p class="text-sm">
-                    Copyright © <span id="current-year">
-                        <script type="text/javascript">document.write(new Date().getFullYear());</script>
-                    </span> codekingtechnologies. All Rights Reserved.
-                </p>
-            </div>
+        <div class="text-center text-white py-4 border-t border-white mt-16">
+            <p class="text-sm">
+                Copyright © <span id="current-year">{{ new Date().getFullYear() }}</span> codekingtechnologies. All
+                Rights Reserved.
+            </p>
         </div>
-
     </footer>
+
 
     <!-- JavaScript -->
     <script>
