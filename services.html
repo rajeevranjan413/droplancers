@@ -6,69 +6,382 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Our Services | Droplancer</title>
-    <link rel="stylesheet" href="./css/services.css">
+    <link rel="stylesheet" href="./tailwindcss/output.css">
+
     <link rel="stylesheet" href="./css/index.css">
+    <script async src="https://kit.fontawesome.com/0a62099a69.js" crossorigin="anonymous"></script>
+
 </head>
 
-<body>
-    <!-- Header Section -->
-    <header class="header">
-        <h1 class="header-title">
-            <a href="/">Droplancer</a>
-        </h1>
-        <nav class="nav">
-            <a href="./services.html" class="nav-link">Services</a>
-            <a href="./about.html" class="nav-link">About Us</a>
-            <a href="./contact.html" class="nav-link">Contact</a>
+<body class="bg-gray-50">
+    <!-- Header and Navigation Section -->
+    <!-- Header and Navigation Section -->
+    <header class="h-[var(--header-height)] bg-[var(--primary-color)] fixed w-full z-50 ">
+        <nav class="p-4 flex justify-center items-center">
+            <div class="container mx-auto flex justify-between items-center">
+                <!-- Brand Name -->
+                <div class="text-white text-2xl font-bold tracking-tight font-[var(--font-primary)]">
+                    Droplancer
+                </div>
+
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex gap-8">
+                    <a href="#"
+                        class="text-white hover:text-[var(--accent-color)] transition-all relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-[var(--accent-color)] after:transition-all hover:after:w-full font-[var(--font-primary)]">
+                        Projects
+                    </a>
+                    <a href="./services.html"
+                        class="text-white hover:text-[var(--accent-color)] transition-all relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-[var(--accent-color)] after:transition-all hover:after:w-full font-[var(--font-primary)]">
+                        Services
+                    </a>
+                    <a href="./contact.html"
+                        class="text-white hover:text-[var(--accent-color)] transition-all relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-[var(--accent-color)] after:transition-all hover:after:w-full font-[var(--font-primary)]">
+                        Let's Talk
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="menu-btn md:hidden">
+                    <div class="menu-btn__burger bg-white"></div>
+                </div>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div
+                class="mobile-menu fixed inset-0 bg-[var(--primary-color)] backdrop-blur-lg flex items-center justify-center md:hidden">
+                <div class="absolute top-4 right-4">
+                    <button class="close-btn text-white text-3xl">&times;</button>
+                </div>
+                <div class="flex flex-col items-center gap-8 text-2xl font-[var(--font-primary)]">
+                    <a href="/"
+                        class="text-white hover:text-[var(--accent-color)] transition-all transform hover:scale-110">
+                        Home
+                    </a>
+                    <a href="#"
+                        class="text-white hover:text-[var(--accent-color)] transition-all transform hover:scale-110">
+                        Product
+                    </a>
+                    <a href="#"
+                        class="text-white hover:text-[var(--accent-color)] transition-all transform hover:scale-110">
+                        Services
+                    </a>
+                    <a href="#"
+                        class="text-white hover:text-[var(--accent-color)] transition-all transform hover:scale-110">
+                        Let's Talk
+                    </a>
+
+                    <!-- Authentication Buttons -->
+                    <div class="flex flex-col gap-4 mt-8 w-full">
+                        <button
+                            class="w-full px-6 py-3 text-[var(--secondary-color)] bg-white rounded-full hover:bg-[var(--accent-color)] transition-all hover:shadow-lg font-[var(--font-primary)]">
+                            Sign Up
+                        </button>
+                        <button
+                            class="w-full px-6 py-3 text-white border border-white rounded-full hover:bg-white/10 transition-all font-[var(--font-primary)]">
+                            Log In
+                        </button>
+                    </div>
+                </div>
+            </div>
         </nav>
+
     </header>
 
+    <!-- Hero Section -->
+    <section class="relative h-screen bg-fixed bg-cover"
+        style="background-image: url('./images/woman-holding-promoting-mini-globe.jpg');">
+        <!-- Overlay -->
+        <div class="absolute inset-0 bg-blue-500 opacity-30"></div> <!-- Adjusted blue opacity -->
 
-    <!-- Services Section -->
-    <section id="services" class="section">
-        <div class="container">
-            <div class="service-card">
-                <h2 class="service-title">Digital Marketing</h2>
-                <p>Strategy development, SEO, social media marketing, PPC, content marketing, and more.</p>
-                <a href="digital-marketing.html" class="learn-more-btn cta-button">Learn More</a>
-            </div>
-
-            <div class="service-card">
-                <h2 class="service-title">SEO (Search Engine Optimization)</h2>
-                <p>On-page SEO, off-page SEO, local SEO, technical SEO. Boost your website traffic.</p>
-                <a href="seo.html" class="learn-more-btn cta-button">Learn More</a>
-            </div>
-
-            <div class="service-card">
-                <h2 class="service-title">Web & App Development</h2>
-                <p>Technologies like React.js, Node.js, Next.js, mobile apps, web applications, custom solutions.</p>
-                <a href="web-app-development.html" class="learn-more-btn cta-button">Learn More</a>
-            </div>
-
-            <div class="service-card">
-                <h2 class="service-title">UI/UX Design</h2>
-                <p>User-friendly, optimized designs that improve conversion rates and user engagement.</p>
-                <a href="ui-ux-design.html" class="learn-more-btn cta-button">Learn More</a>
-            </div>
-
-            <div class="service-card">
-                <h2 class="service-title">Graphic Design</h2>
-                <p>Logo design, branding, website graphics, and visual assets to strengthen your brand identity.</p>
-                <a href="graphic-design.html" class="learn-more-btn cta-button">Learn More</a>
-            </div>
-
-            <div class="service-card">
-                <h2 class="service-title">Cloud Solutions</h2>
-                <p>Cloud services like AWS, Azure, Google Cloud for scalable, secure, and efficient infrastructure.</p>
-                <a href="cloud-solutions.html" class="learn-more-btn cta-button">Learn More</a>
+        <!-- Content -->
+        <div class="relative z-10 flex items-center justify-center h-full px-4 text-center">
+            <div class="text-text-color max-w-3xl">
+                <h1 class="text-4xl font-bold md:text-6xl leading-tight font-primary">
+                    Our Services
+                </h1>
+                <p class="mt-4 text-lg md:text-2xl leading-relaxed font-secondary">
+                    Empowering businesses with tailored IT solutions and expert technical services.
+                </p>
             </div>
         </div>
     </section>
 
+
+
+    <section class="achievement-section achievement-section-service-page animate__fadeInUp wow" data-wow-delay="0.3s">
+        <div class="container mx-auto px-4">
+            <div class="achievement-section__wrapper">
+                <div class="flex items-center">
+                    <!-- Left Column -->
+                    <div class="w-full md:w-1/2 xl:w-1/4">
+                        <div class="achievement-section__title">
+                            <h6 class="text-uppercase text-gray-700 mb-3">Company Facts</h6>
+                            <h4 class="mb-0 text-2xl font-bold text-gray-900">We are proud of our <br> highly
+                                experienced team</h4>
+                        </div>
+                    </div>
+
+                    <!-- Right Column -->
+                    <div class="w-full md:w-1/2 xl:w-3/4 mt-5 md:mt-0">
+                        <div class="achievement-section__counter">
+                            <div class="grid grid-cols-2 gap-5 md:grid-cols-4">
+                                <!-- Counter Item 1 -->
+                                <div class="text-center">
+                                    <h2 class="text-3xl font-bold text-blue-500 counter__item_count" data-count="12">12
+                                    </h2>
+                                    <h6 class="text-sm text-gray-600 mt-3">Years Of Experience</h6>
+                                </div>
+
+                                <!-- Counter Item 2 -->
+                                <div class="text-center">
+                                    <h2 class="text-3xl font-bold text-blue-500 counter__item_count" data-count="2500">
+                                        2500</h2>
+                                    <h6 class="text-sm text-gray-600 mt-3">Websites Launched</h6>
+                                </div>
+
+                                <!-- Counter Item 3 -->
+                                <div class="text-center">
+                                    <h2 class="text-3xl font-bold text-blue-500 counter__item_count" data-count="500">
+                                        500</h2>
+                                    <h6 class="text-sm text-gray-600 mt-3">Satisfied Customers</h6>
+                                </div>
+
+                                <!-- Counter Item 4 -->
+                                <div class="text-center">
+                                    <h2 class="text-3xl font-bold text-blue-500 counter__item_count" data-count="2000">
+                                        2000</h2>
+                                    <h6 class="text-sm text-gray-600 mt-3">Projects Completed</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section class="our-services-section-service-page py-10 bg-[#f1f2fc]" id="shopify-services-section">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-8">
+                <h3 class="text-2xl md:text-3xl font-bold border-b-4 border-[#ffc107] inline-block pb-2">
+                    Shopify Development Services
+                </h3>
+                <p class="mt-4 text-[#333333]">
+                    We assist you to get started with Shopify by setting up Shopify Theme,
+                    adding products, setting up payment/shipping gateway along with
+                    adequate guidance to get the ball rolling.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
+                <!-- Service Item -->
+                <div class="bg-white shadow-md rounded-lg p-6">
+                    <div class="text-center mb-4">
+                        <div class="text-[#ffc107] text-4xl mb-2">
+                            <i class="fas fa-desktop"></i>
+                        </div>
+                        <h5 class="text-lg font-bold">Shopify Website Development</h5>
+                    </div>
+                    <p class="text-[#333333]">
+                        eCommerce businesses require additional integrations to simplify their
+                        operations. Our expert developers can perform advanced integrations for
+                        your Shopify store to automate backend processes.
+                    </p>
+                </div>
+
+                <!-- Service Item -->
+                <div class="bg-white shadow-md rounded-lg p-6">
+                    <div class="text-center mb-4">
+                        <div class="text-[#ffc107] text-4xl mb-2">
+                            <i class="fas fa-window-maximize"></i>
+                        </div>
+                        <h5 class="text-lg font-bold">Shopify Theme Development</h5>
+                    </div>
+                    <p class="text-[#333333]">
+                        Our Shopify theme developers provide a wide range of design services to
+                        create stunning themes for your store. From custom themes to responsive
+                        themes, we can address all your needs.
+                    </p>
+                </div>
+
+                <!-- Service Item -->
+                <div class="bg-white shadow-md rounded-lg p-6">
+                    <div class="text-center mb-4">
+                        <div class="text-[#ffc107] text-4xl mb-2">
+                            <i class="fas fa-cog"></i>
+                        </div>
+                        <h5 class="text-lg font-bold">Shopify App Development</h5>
+                    </div>
+                    <p class="text-[#333333]">
+                        Our developers can create robust apps for your Shopify store. From
+                        custom app development to third-party app integration and mobile apps,
+                        we can do it all.
+                    </p>
+                </div>
+
+                <!-- Service Item -->
+                <div class="bg-white shadow-md rounded-lg p-6">
+                    <div class="text-center mb-4">
+                        <div class="text-[#ffc107] text-4xl mb-2">
+                            <i class="fab fa-whmcs"></i>
+                        </div>
+                        <h5 class="text-lg font-bold">Shopify Integrations</h5>
+                    </div>
+                    <p class="text-[#333333]">
+                        Our expert developers can perform advanced integrations to simplify
+                        operations and automate backend processes for your Shopify store.
+                    </p>
+                </div>
+
+                <!-- Service Item -->
+                <div class="bg-white shadow-md rounded-lg p-6">
+                    <div class="text-center mb-4">
+                        <div class="text-[#ffc107] text-4xl mb-2">
+                            <i class="fas fa-store"></i>
+                        </div>
+                        <h5 class="text-lg font-bold">Shopify Migration</h5>
+                    </div>
+                    <p class="text-[#333333]">
+                        Migrate to Shopify hassle-free. We ensure no data loss, integrity
+                        checks, and seamless inventory, orders, and product migration.
+                    </p>
+                </div>
+
+                <!-- Service Item -->
+                <div class="bg-white shadow-md rounded-lg p-6">
+                    <div class="text-center mb-4">
+                        <div class="text-[#ffc107] text-4xl mb-2">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <h5 class="text-lg font-bold">Shopify Customization</h5>
+                    </div>
+                    <p class="text-[#333333]">
+                        Get the best web application services, including e-commerce portals,
+                        CMS, ERP solutions, and more for your business needs.
+                    </p>
+                </div>
+
+                <!-- Service Item -->
+                <div class="bg-white shadow-md rounded-lg p-6">
+                    <div class="text-center mb-4">
+                        <div class="text-[#ffc107] text-4xl mb-2">
+                            <i class="fas fa-virus"></i>
+                        </div>
+                        <h5 class="text-lg font-bold">Shopify Bug Fixing</h5>
+                    </div>
+                    <p class="text-[#333333]">
+                        We handle critical errors and bug fixes to ensure a stable and
+                        non-disruptive eCommerce experience for your Shopify store.
+                    </p>
+                </div>
+
+                <!-- Service Item -->
+                <div class="bg-white shadow-md rounded-lg p-6">
+                    <div class="text-center mb-4">
+                        <div class="text-[#ffc107] text-4xl mb-2">
+                            <i class="fas fa-user-cog"></i>
+                        </div>
+                        <h5 class="text-lg font-bold">Shopify Maintenance & Support</h5>
+                    </div>
+                    <p class="text-[#333333]">
+                        Ensure your Shopify store is live 24/7 with our maintenance and
+                        support services. No more bugs, glitches, or downtime.
+                    </p>
+                </div>
+
+                <!-- Service Item -->
+                <div class="bg-white shadow-md rounded-lg p-6">
+                    <div class="text-center mb-4">
+                        <div class="text-[#ffc107] text-4xl mb-2">
+                            <i class="fas fa-list-alt"></i>
+                        </div>
+                        <h5 class="text-lg font-bold">Shopify Performance Optimization</h5>
+                    </div>
+                    <p class="text-[#333333]">
+                        Our experts optimize your store for fast page loads, maximum uptime,
+                        and seamless performance across all aspects.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold text-gray-800 mb-6">Get in Touch</h2>
+            <p class="text-gray-600 text-lg mb-8">Have a project in mind? Let's work together to bring your ideas to
+                life.</p>
+            <a href="contact.html"
+                class="px-6 py-3 bg-yellow-500 text-white font-semibold rounded-lg shadow-md hover:bg-yellow-600">Contact
+                Us</a>
+        </div>
+    </section>
+
     <!-- Footer Section -->
-    <footer class="footer">
-        <p>&copy; 2024 Droplancer. All Rights Reserved.</p>
+    <footer class="bg-primary-color relative w-full rounded-t-3xl">
+        <div class="flex justify-between flex-wrap px-4 py-8 sm:px-6 md:p-12 xl:p-16">
+            <div class="space-y-8">
+                <h3 class="font-bold text-sm mb-4">SERVICES</h3>
+                <ul class="space-y-2">
+                    <li><a href="#">Web Development</a></li>
+                    <li><a href="#">Mobile App Development</a></li>
+                    <li><a href="#">Cloud Solutions</a></li>
+                    <li><a href="#">IT Consulting</a></li>
+                </ul>
+            </div>
+            <div class="space-y-8">
+                <h3 class="font-bold text-sm mb-4">ABOUT US</h3>
+                <ul class="space-y-2">
+                    <li><a href="#">Our Story</a></li>
+                    <li><a href="#">Leadership</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Partnerships</a></li>
+                </ul>
+            </div>
+            <div class="space-y-8">
+                <h3 class="font-bold text-sm mb-4">RESOURCES</h3>
+                <ul class="space-y-2">
+                    <li><a href="#">Case Studies</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">White Papers</a></li>
+                    <li><a href="#">FAQs</a></li>
+                </ul>
+            </div>
+            <div class="flex flex-col space-y-2 mt-6 md:space-y-6">
+                <h3 class="font-medium text-lg">Subscribe to our email newsletter</h3>
+                <form class="flex flex-wrap gap-4 items-center">
+                    <input type="email" placeholder="Your email" required
+                        class="w-56 sm:w-full border-2 border-dark-text-color rounded-md bg-primary-color text-dark-text-color py-2 px-4 outline-none focus:ring-2 focus:ring-dark-text-color" />
+                    <button type="submit"
+                        class="bg-black text-white font-bold py-2 px-6 rounded-md hover:bg-gray-800">SUBSCRIBE</button>
+                </form>
+                <h4 class="font-medium text-base">Follow us</h4>
+                <div class="flex space-x-4">
+                    <a href="#" class="flex justify-center items-center w-12 h-12 rounded-md bg-blue-600 text-white"><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="flex justify-center items-center w-12 h-12 rounded-md bg-sky-400 text-white"><i
+                            class="fab fa-twitter"></i></a>
+                    <a href="#"
+                        class="flex justify-center items-center w-12 h-12 rounded-md bg-gradient-to-br from-yellow-400 via-pink-500 to-purple-600 text-white"><i
+                            class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bar bg-[var(--primary-color)] text-center text-gray-700 py-4 border-t mt-4">
+            <div class="container mx-auto">
+                <p class="text-sm">
+                    Copyright © <span id="current-year">
+                        <script>document.write(new Date().getFullYear());</script>
+                    </span> Droplancer. All Rights Reserved.
+                </p>
+            </div>
+        </div>
     </footer>
 </body>
+
 
 </html>
