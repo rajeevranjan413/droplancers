@@ -1,12 +1,28 @@
 // Mobile Menu Toggle
-const menuBtn = document.querySelector('.menu-btn');
-const mobileMenu = document.querySelector('.mobile-menu');
-const body = document.querySelector('body');
+document.addEventListener("DOMContentLoaded", () => {
+    const menuBtn = document.querySelector(".menu-btn");
+    const mobileMenu = document.querySelector(".mobile-menu");
+    const closeBtn = document.querySelector(".close-btn");
 
-menuBtn.addEventListener('click', () => {
-    menuBtn.classList.toggle('active');
-    mobileMenu.classList.toggle('active');
-    body.classList.toggle('overflow-hidden');
+    // Open menu
+    menuBtn.addEventListener("click", () => {
+        mobileMenu.classList.add("active");
+        menuBtn.classList.add("active");
+    });
+
+    // Close menu (via close button)
+    closeBtn.addEventListener("click", () => {
+        mobileMenu.classList.remove("active");
+        menuBtn.classList.remove("active");
+    });
+
+    // Optional: Close menu by clicking outside the menu (overlay area)
+    mobileMenu.addEventListener("click", (e) => {
+        if (e.target === mobileMenu) {
+            mobileMenu.classList.remove("active");
+            menuBtn.classList.remove("active");
+        }
+    });
 });
 
 // Particles Animation

@@ -34,6 +34,14 @@ body {
     height: auto;
   }
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-secondary);
+}
 
 a {
   color: white;
@@ -50,77 +58,8 @@ a {
   padding: 0 1rem;
 }
 
-.header {
-  background-color: var(--primary-color);
-  color: white;
-  padding: 1rem 2rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: var(--header-height);
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-}
-
-.nav {
-  display: flex;
-  gap: 1.5rem;
-}
-
-.nav-link {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-  transition: color 0.3s;
-  font-size: 1.1rem;
-}
-
-.nav-link:hover {
-  color: var(--accent-color);
-}
-
 .section {
-  padding: 3rem 0;
-}
-
-.service-card {
-  background-color: white;
-  border-radius: 10px;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-  padding: 2rem;
-  text-align: center;
-  transition: transform 0.3s;
-}
-
-.service-card:hover {
-  transform: translateY(-10px);
-}
-
-.cta-button {
-  background-color: var(--accent-color);
-  color: white;
-  padding: 1.2rem 2.5rem;
-  border: none;
-  border-radius: 8px;
-  font-size: 1.3rem;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-.cta-button:hover {
-  background-color: var(--primary-color);
-}
-
-@media (max-width: 768px) {
-  .nav-link {
-    font-size: 1rem;
-  }
-
-  .cta-button {
-    font-size: 1.1rem;
-    padding: 1rem 2rem;
-  }
+  padding: 4rem 1rem;
 }
 
 /* Footer Styling */

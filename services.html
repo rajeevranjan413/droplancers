@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Our Services | Droplancer</title>
-    <link rel="stylesheet" href="./tailwindcss/output.css">
-
     <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./animation.css">
+    <link rel="stylesheet" href="./tailwindcss/output.css">
     <script async src="https://kit.fontawesome.com/0a62099a69.js" crossorigin="anonymous"></script>
 
 </head>
@@ -87,7 +87,7 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="relative h-screen bg-fixed bg-cover"
+    <section class=" choose-us-section relative h-screen bg-fixed bg-cover"
         style="background-image: url('./images/woman-holding-promoting-mini-globe.jpg');">
         <!-- Overlay -->
         <div class="absolute inset-0 opacity-[.9]"></div> <!-- Adjusted blue opacity -->
@@ -95,10 +95,10 @@
         <!-- Content -->
         <div class="relative z-10 flex items-center justify-center h-full px-4 text-center">
             <div class="text-text-color max-w-3xl">
-                <h1 class="text-4xl font-bold md:text-6xl leading-tight font-primary">
+                <h1 class="text-4xl font-bold md:text-6xl leading-tight font-primary fade-in">
                     Our Services
                 </h1>
-                <p class="mt-4 text-lg md:text-2xl leading-relaxed font-secondary">
+                <p class="mt-4 text-lg md:text-2xl leading-relaxed font-secondary fade-in">
                     Empowering businesses with tailored IT solutions and expert technical services.
                 </p>
             </div>
@@ -106,14 +106,16 @@
     </section>
 
     <!-- Company Section -->
-    <section class="relative mt-[-80px] bg-transparent" data-wow-delay="0.3s">
-        <div class="max-w-5xl mx-auto px-4 bg-[var(--primary-color)]">
+    <section class="relative mt-[-80px] mb-6">
+        <div class="max-w-6xl mx-auto px-4 bg-[var(--primary-color)] fade-in p-6 rounded">
             <div class="achievement-section__wrapper">
                 <div class="flex items-center">
                     <!-- Left Column -->
-                    <div class="w-full md:w-1/2 xl:w-1/4">
+                    <div class="w-full md:w-1/2 xl:w-1/3">
                         <div class="achievement-section__title">
-                            <h6 class="text-uppercase text-gray-300 mb-3">Company Facts</h6>
+                            <h6 class="text-uppercase text-sm text-gray-300 mb-3 flex gap-2 items-center uppercase">
+                                <div class="border-b-2 border-[#ffc107] w-[30px]"></div>Company Facts
+                            </h6>
                             <h4 class="mb-0 text-2xl font-bold text-white">We are proud of our <br> highly experienced
                                 team</h4>
                         </div>
@@ -161,8 +163,8 @@
 
 
 
-
-    <section class="our-services-section-service-page py-10 bg-[#f1f2fc]" id="shopify-services-section">
+    <!-- Shopify Development Services Section -->
+    <section class="bg container our-services-section-service-page py-10  " id="shopify-services-section">
         <div class="container mx-auto px-4">
             <div class="text-center mb-8">
                 <h3 class="text-2xl md:text-3xl font-bold border-b-4 border-[#ffc107] inline-block pb-2">
@@ -307,6 +309,103 @@
             </div>
         </div>
     </section>
+
+    <section class="our-services-section-service-page py-10 bg-[#f1f2fc]" id="custom-application-section">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-8">
+                <h3 class="text-2xl md:text-3xl font-bold border-b-4 border-[#00aaff] inline-block pb-2">
+                    Custom Application Development
+                </h3>
+                <p class="mt-4 text-[#333333]">
+                    We specialize in building custom applications tailored to your business needs, ensuring high
+                    performance,
+                    scalability, and security to drive your success.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
+                <!-- Service Item -->
+                <div class="bg-white shadow-md rounded-lg p-6">
+                    <div class="text-center mb-4">
+                        <div class="text-[#00aaff] text-4xl mb-2">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h5 class="text-lg font-bold">Custom Web Applications</h5>
+                    </div>
+                    <p class="text-[#333333]">
+                        Develop robust and scalable web applications to enhance your business operations and customer
+                        experience.
+                    </p>
+                </div>
+
+                <!-- Service Item -->
+                <div class="bg-white shadow-md rounded-lg p-6">
+                    <div class="text-center mb-4">
+                        <div class="text-[#00aaff] text-4xl mb-2">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h5 class="text-lg font-bold">Mobile App Development</h5>
+                    </div>
+                    <p class="text-[#333333]">
+                        Build intuitive and high-performing mobile applications for iOS and Android platforms.
+                    </p>
+                </div>
+
+                <!-- Service Item -->
+                <div class="bg-white shadow-md rounded-lg p-6">
+                    <div class="text-center mb-4">
+                        <div class="text-[#00aaff] text-4xl mb-2">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <h5 class="text-lg font-bold">Database Solutions</h5>
+                    </div>
+                    <p class="text-[#333333]">
+                        Design and implement efficient database solutions to manage your data securely and effectively.
+                    </p>
+                </div>
+
+                <!-- Service Item -->
+                <div class="bg-white shadow-md rounded-lg p-6">
+                    <div class="text-center mb-4">
+                        <div class="text-[#00aaff] text-4xl mb-2">
+                            <i class="fas fa-cloud"></i>
+                        </div>
+                        <h5 class="text-lg font-bold">Cloud Integration</h5>
+                    </div>
+                    <p class="text-[#333333]">
+                        Leverage cloud technology to enhance scalability and reliability for your applications.
+                    </p>
+                </div>
+
+                <!-- Service Item -->
+                <div class="bg-white shadow-md rounded-lg p-6">
+                    <div class="text-center mb-4">
+                        <div class="text-[#00aaff] text-4xl mb-2">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h5 class="text-lg font-bold">Security Enhancements</h5>
+                    </div>
+                    <p class="text-[#333333]">
+                        Implement cutting-edge security features to safeguard your applications against vulnerabilities.
+                    </p>
+                </div>
+
+                <!-- Service Item -->
+                <div class="bg-white shadow-md rounded-lg p-6">
+                    <div class="text-center mb-4">
+                        <div class="text-[#00aaff] text-4xl mb-2">
+                            <i class="fas fa-cogs"></i>
+                        </div>
+                        <h5 class="text-lg font-bold">Third-Party Integrations</h5>
+                    </div>
+                    <p class="text-[#333333]">
+                        Seamlessly integrate third-party tools and APIs to expand your application’s capabilities.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
     <!-- Contact Section -->
     <section class="py-16 bg-gray-100">
