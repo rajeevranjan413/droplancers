@@ -6,156 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us - Droplancer</title>
     <link rel="stylesheet" href="./css/index.css">
-    <link rel="stylesheet" href="./animation.css">
-    <link rel="stylesheet" href="./tailwindcss/output.css">
-    <script async src="https://kit.fontawesome.com/0a62099a69.js" crossorigin="anonymous"></script>
-
+    <link rel="stylesheet" href="./css/contact.css">
 </head>
 
 <body>
     <!-- Header and Navigation Section -->
-    <header class="h-[var(--header-height)] bg-[var(--primary-color)] fixed w-full z-50 ">
-        <nav class="p-4 flex justify-center items-center">
-            <div class="container mx-auto flex justify-between items-center">
-                <!-- Brand Name -->
-                <div class="text-white text-2xl font-bold tracking-tight font-[var(--font-primary)]">
-                    <a href="/"> Droplancer</a>
-                </div>
-
-                <!-- Desktop Menu -->
-                <div class="hidden md:flex gap-8">
-                    <a href="./services.html"
-                        class="text-white hover:text-[var(--accent-color)] transition-all relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-[var(--accent-color)] after:transition-all hover:after:w-full font-[var(--font-primary)]">
-                        Services
-                    </a>
-                    <a href="./about.html"
-                        class="text-white hover:text-[var(--accent-color)] transition-all relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-[var(--accent-color)] after:transition-all hover:after:w-full font-[var(--font-primary)]">
-                        About Us
-                    </a>
-                    <a href="./contact.html"
-                        class="text-white hover:text-[var(--accent-color)] transition-all relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-[var(--accent-color)] after:transition-all hover:after:w-full font-[var(--font-primary)]">
-                        Let's Talk
-                    </a>
-                </div>
-
-                <!-- Mobile Menu Button -->
-                <div class="menu-btn md:hidden">
-                    <div class="menu-btn__burger bg-white"></div>
-                </div>
-            </div>
-
-            <!-- Mobile Menu -->
-            <div
-                class="mobile-menu fixed inset-0 bg-[var(--primary-color)] backdrop-blur-lg flex items-center justify-center md:hidden">
-                <div class="absolute top-4 right-4">
-                    <button class="close-btn text-white text-3xl">&times;</button>
-                </div>
-                <div class="flex flex-col items-center gap-8 text-2xl font-[var(--font-primary)]">
-                    <a href="/"
-                        class="text-white hover:text-[var(--accent-color)] transition-all transform hover:scale-110">
-                        Home
-                    </a>
-                    <a href="./services.html"
-                        class="text-white hover:text-[var(--accent-color)] transition-all transform hover:scale-110">
-                        Services
-                    </a>
-                    <a href="./about.html"
-                        class="text-white hover:text-[var(--accent-color)] transition-all transform hover:scale-110">
-                        About Us
-                    </a>
-                    <a href="./contact.html"
-                        class="text-white hover:text-[var(--accent-color)] transition-all transform hover:scale-110">
-                        Let's Talk
-                    </a>
-
-                    <!-- Authentication Buttons
-                <div class="flex flex-col gap-4 mt-8 w-full">
-                    <button
-                        class="w-full px-6 py-3 text-[var(--secondary-color)] bg-white rounded-full hover:bg-[var(--accent-color)] transition-all hover:shadow-lg font-[var(--font-primary)]">
-                        Sign Up
-                    </button>
-                    <button
-                        class="w-full px-6 py-3 text-white border border-white rounded-full hover:bg-white/10 transition-all font-[var(--font-primary)]">
-                        Log In
-                    </button>
-                </div> -->
-                </div>
-            </div>
+    <header class="header">
+        <h1 class="header-title">
+            <a href="/">Droplancer</a>
+        </h1>
+        <nav class="nav">
+            <a href="./services.html" class="nav-link">Services</a>
+            <a href="./about.html" class="nav-link">About Us</a>
+            <a href="./contact.html" class="nav-link">Contact</a>
         </nav>
-
     </header>
-
-    <!-- Hero Section -->
-    <section class="relative h-screen bg-fixed bg-cover"
-        style="background-image: url('./images/woman-holding-promoting-mini-globe.jpg');">
-        <!-- Overlay -->
-        <div class="absolute inset-0 opacity-[.9]"></div> <!-- Adjusted blue opacity -->
-
-        <!-- Content -->
-        <div class="relative z-10 flex items-center justify-center h-full px-4 text-center">
-            <div class="text-text-color max-w-3xl">
-                <h1 class="text-4xl font-bold md:text-6xl leading-tight font-primary">
-                    Our Services
-                </h1>
-                <p class="mt-4 text-lg md:text-2xl leading-relaxed font-secondary">
-                    Empowering businesses with tailored IT solutions and expert technical services.
-                </p>
-            </div>
-        </div>
-    </section>
-    <!-- Company Section -->
-    <section class="relative mt-[-80px] bg-transparent" data-wow-delay="0.3s">
-        <div class="max-w-5xl mx-auto px-4 bg-[var(--primary-color)]">
-            <div class="achievement-section__wrapper">
-                <div class="flex items-center">
-                    <!-- Left Column -->
-                    <div class="w-full md:w-1/2 xl:w-1/4">
-                        <div class="achievement-section__title">
-                            <h6 class="text-uppercase text-gray-300 mb-3">Company Facts</h6>
-                            <h4 class="mb-0 text-2xl font-bold text-white">We are proud of our <br> highly experienced
-                                team</h4>
-                        </div>
-                    </div>
-
-                    <!-- Right Column -->
-                    <div class="w-full md:w-1/2 xl:w-3/4 mt-5 md:mt-0">
-                        <div class="achievement-section__counter">
-                            <div class="grid grid-cols-2 gap-5 md:grid-cols-4">
-                                <!-- Counter Item 1 -->
-                                <div class="text-center">
-                                    <h2 class="text-3xl font-bold text-white counter__item_count" data-count="12">12
-                                    </h2>
-                                    <h6 class="text-sm text-gray-300 mt-3">Years Of Experience</h6>
-                                </div>
-
-                                <!-- Counter Item 2 -->
-                                <div class="text-center">
-                                    <h2 class="text-3xl font-bold text-white counter__item_count" data-count="2500">2500
-                                    </h2>
-                                    <h6 class="text-sm text-gray-300 mt-3">Websites Launched</h6>
-                                </div>
-
-                                <!-- Counter Item 3 -->
-                                <div class="text-center">
-                                    <h2 class="text-3xl font-bold text-white counter__item_count" data-count="500">500
-                                    </h2>
-                                    <h6 class="text-sm text-gray-300 mt-3">Satisfied Customers</h6>
-                                </div>
-
-                                <!-- Counter Item 4 -->
-                                <div class="text-center">
-                                    <h2 class="text-3xl font-bold text-white counter__item_count" data-count="2000">2000
-                                    </h2>
-                                    <h6 class="text-sm text-gray-300 mt-3">Projects Completed</h6>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
 
     <!-- Contact Us Section -->
     <section id="contact-us" class="section">
