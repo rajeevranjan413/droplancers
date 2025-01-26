@@ -104,49 +104,49 @@
         </div>
     </section>
     <!-- Company Section -->
-    <section class="relative mt-[-80px] bg-transparent" data-wow-delay="0.3s">
-        <div class="max-w-5xl mx-auto px-4 bg-[var(--primary-color)]">
-            <div class="achievement-section__wrapper">
-                <div class="flex items-center">
-                    <!-- Left Column -->
-                    <div class="w-full md:w-1/2 xl:w-1/4">
-                        <div class="achievement-section__title">
-                            <h6 class="text-uppercase text-gray-300 mb-3">Company Facts</h6>
-                            <h4 class="mb-0 text-2xl font-bold text-white">We are proud of our <br> highly experienced
-                                team</h4>
-                        </div>
+
+
+
+    <!-- Map Section -->
+    <section class="map-section py-16 bg-gray-900 text-gray-200">
+        <div class="container mx-auto px-6 lg:px-12">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                <!-- Map Column -->
+                <div class="col-span-1 lg:col-span-6 h-full">
+                    <div class="map-section__map overflow-hidden rounded-lg shadow-lg h-full">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3561.2981015431124!2d75.81491641546963!3d26.798635171442125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396dc98b1ccac93d%3A0xa4c67cafe80c3376!2sCode%20King%20Technologies%20PVT.%20LTD.!5e0!3m2!1sen!2sin!4v1643965611862!5m2!1sen!2sin"
+                            style="border:0;" class=" h-full w-full" allowfullscreen="" loading="lazy"></iframe>
                     </div>
-
-                    <!-- Right Column -->
-                    <div class="w-full md:w-1/2 xl:w-3/4 mt-5 md:mt-0">
-                        <div class="achievement-section__counter">
-                            <div class="grid grid-cols-2 gap-5 md:grid-cols-4">
-                                <!-- Counter Item 1 -->
-                                <div class="text-center">
-                                    <h2 class="text-3xl font-bold text-white counter__item_count" data-count="12">12
-                                    </h2>
-                                    <h6 class="text-sm text-gray-300 mt-3">Years Of Experience</h6>
+                </div>
+                <!-- Content Column -->
+                <div class="col-span-1 lg:col-span-6">
+                    <div class="map-section__content bg-gray-800 p-8 rounded-lg shadow-lg">
+                        <h4 class="text-2xl font-semibold text-white">Stay Connected</h4>
+                        <div class="items-wrapper mt-6 space-y-6">
+                            <!-- Address -->
+                            <div class="items-wrapper__item flex items-start">
+                                <div
+                                    class="icon w-12 h-12 flex justify-center items-center text-gray-900 bg-yellow-500 rounded-full">
+                                    <i class="fas fa-map-marker-alt text-lg"></i>
                                 </div>
-
-                                <!-- Counter Item 2 -->
-                                <div class="text-center">
-                                    <h2 class="text-3xl font-bold text-white counter__item_count" data-count="2500">2500
-                                    </h2>
-                                    <h6 class="text-sm text-gray-300 mt-3">Websites Launched</h6>
+                                <div class="text ml-4">
+                                    <p class="text-gray-300">
+                                        1st Floor, 60/4, Sector 6, Pratap Nagar, Jaipur, Rajasthan 302033
+                                    </p>
                                 </div>
-
-                                <!-- Counter Item 3 -->
-                                <div class="text-center">
-                                    <h2 class="text-3xl font-bold text-white counter__item_count" data-count="500">500
-                                    </h2>
-                                    <h6 class="text-sm text-gray-300 mt-3">Satisfied Customers</h6>
+                            </div>
+                            <!-- Email -->
+                            <div class="items-wrapper__item flex items-start">
+                                <div
+                                    class="icon w-12 h-12 flex justify-center items-center text-gray-900 bg-yellow-500 rounded-full">
+                                    <i class="far fa-envelope text-lg"></i>
                                 </div>
-
-                                <!-- Counter Item 4 -->
-                                <div class="text-center">
-                                    <h2 class="text-3xl font-bold text-white counter__item_count" data-count="2000">2000
-                                    </h2>
-                                    <h6 class="text-sm text-gray-300 mt-3">Projects Completed</h6>
+                                <div class="text ml-4">
+                                    <p class="text-gray-300">
+                                        <a href="mailto:info@codeking.in"
+                                            class="text-yellow-400 hover:underline">info@codeking.in</a>
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -158,73 +158,110 @@
 
 
     <!-- Contact Us Section -->
-    <section id="contact-us" class="section">
-        <div class="container">
-            <h2 class="section-title">Contact Us</h2>
+    <section id="contact-us" class="section bg-[var(--background-color)] py-16">
+        <div class="container mx-auto max-w-[var(--max-width)] px-6">
+            <h2 class="text-4xl font-bold text-[var(--dark-text-color)] text-center mb-12">Contact Us</h2>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
 
-            <!-- Contact Form -->
-            <div class="contact-form">
-                <form action="#" method="post">
-                    <div class="form-group">
-                        <label for="name">Your Name</label>
-                        <input type="text" id="name" name="name" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Your Email</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Your Message</label>
-                        <textarea id="message" name="message" required></textarea>
-                    </div>
-                    <button type="submit" class="cta-button">Send Message</button>
-                </form>
-            </div>
-
-            <!-- Contact Details -->
-            <div class="contact-details">
-                <h3>Contact Details</h3>
-                <p><strong>Phone:</strong> +1 (123) 456-7890</p>
-                <p><strong>Email:</strong> contact@droplancer.com</p>
-                <p><strong>Address:</strong> 123 Business St, Suite 456, City, Country</p>
-                <div class="social-links">
-                    <a href="https://facebook.com" class="nav-link">Facebook</a>
-                    <a href="https://twitter.com" class="nav-link">Twitter</a>
-                    <a href="https://linkedin.com" class="nav-link">LinkedIn</a>
+                <!-- Left Column: Contact Form -->
+                <div class="bg-[var(--primary-color)] p-8 rounded-lg shadow-lg">
+                    <h3 class="text-2xl font-semibold text-[var(--text-color)] mb-6">Get in Touch</h3>
+                    <form action="#" method="post" class="space-y-6">
+                        <div class="form-group">
+                            <label for="name" class="block text-[var(--text-color)] mb-2">Your Name</label>
+                            <input type="text" id="name" name="name" required
+                                class="w-full px-4 py-2 bg-[var(--background-color)] border border-[var(--border-color)] rounded-lg focus:outline-none focus:ring-2 focus:ring-[var(--accent-color)]">
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="block text-[var(--text-color)] mb-2">Your Email</label>
+                            <input type="email" id="email" name="email" required
+                                class="w-full px-4 py-2 bg-[var(--background-color)] border border-[var(--border-color)] rounded-lg focus:outline-none focus:ring-2 focus:ring-[var(--accent-color)]">
+                        </div>
+                        <div class="form-group">
+                            <label for="message" class="block text-[var(--text-color)] mb-2">Your Message</label>
+                            <textarea id="message" name="message" rows="4" required
+                                class="w-full px-4 py-2 bg-[var(--background-color)] border border-[var(--border-color)] rounded-lg focus:outline-none focus:ring-2 focus:ring-[var(--accent-color)]"></textarea>
+                        </div>
+                        <button type="submit"
+                            class="w-full py-3 bg-[var(--accent-color)] text-[var(--primary-color)] font-semibold rounded-lg shadow-md hover:bg-yellow-600 transition duration-300">Send
+                            Message</button>
+                    </form>
                 </div>
-            </div>
 
-            <!-- Google Map -->
-            <div class="google-map">
-                <iframe src="https://www.google.com/maps/embed?pb=..." width="600" height="450" style="border:0;"
-                    allowfullscreen="" loading="lazy"></iframe>
-            </div>
-
-            <!-- FAQ Section -->
-            <div class="faq">
-                <h3>Frequently Asked Questions</h3>
-                <div class="faq-item">
-                    <h4>What services does Droplancer provide?</h4>
-                    <p>We provide IT solutions like web development, mobile app development, digital marketing, and
-                        graphic design services.</p>
-                </div>
-                <div class="faq-item">
-                    <h4>How can I request a quote?</h4>
-                    <p>You can fill out the contact form on this page or email us directly at contact@droplancer.com.
-                    </p>
-                </div>
-                <div class="faq-item">
-                    <h4>What is the timeline for a project?</h4>
-                    <p>Project timelines vary depending on the scope. After discussing your requirements, we'll provide
-                        an estimated timeline.</p>
+                <!-- Right Column: Image -->
+                <div class="flex justify-center">
+                    <img src="./images/rb_3350.png" alt="Contact Us Illustration"
+                        class="w-full max-w-md lg:max-w-full ">
                 </div>
             </div>
         </div>
     </section>
 
+
+
     <!-- Footer Section -->
-    <footer class="footer">
-        <p>&copy; 2024 Droplancer. All Rights Reserved.</p>
+    <footer class="bg-primary-color relative w-full rounded-t-3xl">
+        <div class="flex justify-between flex-wrap px-4  py-8 sm:px-6 md:p-12 xl:p-16">
+
+            <div class="space-y-8">
+                <h3 class="font-bold text-sm mb-4">SERVICES</h3>
+                <ul class="space-y-2">
+                    <li><a href="#" class="">Web Development</a></li>
+                    <li><a href="#" class="">Mobile App Development</a></li>
+                    <li><a href="#" class="">Cloud Solutions</a></li>
+                    <li><a href="#" class="">IT Consulting</a></li>
+                </ul>
+            </div>
+            <div class="space-y-8">
+                <h3 class="font-bold text-sm mb-4">ABOUT US</h3>
+                <ul class="space-y-2">
+                    <li><a href="#" class="">Our Story</a></li>
+                    <li><a href="#" class="">Leadership</a></li>
+                    <li><a href="#" class="">Careers</a></li>
+                    <li><a href="#" class="">Partnerships</a></li>
+                </ul>
+            </div>
+            <div class="space-y-8">
+                <h3 class="font-bold text-sm mb-4">RESOURCES</h3>
+                <ul class="space-y-2">
+                    <li><a href="#" class="">Case Studies</a></li>
+                    <li><a href="#" class="">Blog</a></li>
+                    <li><a href="#" class="">White Papers</a></li>
+                    <li><a href="#" class="">FAQs</a></li>
+                </ul>
+            </div>
+            <div class="flex flex-col space-y-2 mt-6 md:space-y-6">
+                <h3 class="font-medium text-lg">Subscribe to our email newsletter</h3>
+                <form class="flex flex-wrap gap-4 items-center">
+                    <input type="email" placeholder="Your email" required
+                        class="w-56 sm:w-full border-2 border-dark-text-color rounded-md bg-primary-color text-dark-text-color py-2 px-4 outline-none focus:ring-2 focus:ring-dark-text-color" />
+                    <button type="submit"
+                        class="bg-black text-white font-bold py-2 px-6 rounded-md hover:bg-gray-800">SUBSCRIBE</button>
+                </form>
+                <h4 class="font-medium text-base">Follow us</h4>
+                <div class="flex space-x-4">
+                    <a href="#" class="flex justify-center items-center w-12 h-12 rounded-md bg-blue-600 text-white">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="flex justify-center items-center w-12 h-12 rounded-md bg-sky-400 text-white">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#"
+                        class="flex justify-center items-center w-12 h-12 rounded-md bg-gradient-to-br from-yellow-400 via-pink-500 to-purple-600 text-white">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bar bg-[var(--primary-color)] text-center text-gray-700 py-4 border-t mt-4">
+            <div class="container mx-auto">
+                <p class="text-sm">
+                    Copyright © <span id="current-year">
+                        <script>document.write(new Date().getFullYear());</script>
+                    </span> Droplancers. All Rights Reserved.
+                </p>
+            </div>
+        </div>
     </footer>
 </body>
 
