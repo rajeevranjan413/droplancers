@@ -13,7 +13,7 @@
 
 </head>
 
-<body>
+<body class="bg-gray-50">
     <!-- Header and Navigation Section -->
     <header class="h-[var(--header-height)] bg-[var(--primary-color)] fixed w-full z-50 ">
         <nav class="p-4 flex justify-center items-center">
@@ -35,7 +35,7 @@
                     </a>
                     <a href="./contact.html"
                         class="text-white hover:text-[var(--accent-color)] transition-all relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-[var(--accent-color)] after:transition-all hover:after:w-full font-[var(--font-primary)]">
-                        Let's Talk
+                        Contact
                     </a>
                 </div>
 
@@ -48,14 +48,15 @@
             <!-- Mobile Menu -->
             <div
                 class="mobile-menu fixed inset-0 bg-[var(--primary-color)] backdrop-blur-lg flex items-center justify-center md:hidden">
-                <div class="absolute top-4 right-4">
-                    <button class="close-btn text-white text-3xl">&times;</button>
+                <div class="absolute top-4 right-8">
+                    <div class="close-btn text-white text-4xl">&times;</div>
                 </div>
                 <div class="flex flex-col items-center gap-8 text-2xl font-[var(--font-primary)]">
                     <a href="/"
                         class="text-white hover:text-[var(--accent-color)] transition-all transform hover:scale-110">
                         Home
                     </a>
+
                     <a href="./services.html"
                         class="text-white hover:text-[var(--accent-color)] transition-all transform hover:scale-110">
                         Services
@@ -66,20 +67,20 @@
                     </a>
                     <a href="./contact.html"
                         class="text-white hover:text-[var(--accent-color)] transition-all transform hover:scale-110">
-                        Let's Talk
+                        Contact
                     </a>
 
                     <!-- Authentication Buttons
-                    <div class="flex flex-col gap-4 mt-8 w-full">
-                        <button
-                            class="w-full px-6 py-3 text-[var(--secondary-color)] bg-white rounded-full hover:bg-[var(--accent-color)] transition-all hover:shadow-lg font-[var(--font-primary)]">
-                            Sign Up
-                        </button>
-                        <button
-                            class="w-full px-6 py-3 text-white border border-white rounded-full hover:bg-white/10 transition-all font-[var(--font-primary)]">
-                            Log In
-                        </button>
-                    </div> -->
+                <div class="flex flex-col gap-4 mt-8 w-full">
+                    <button
+                        class="w-full px-6 py-3 text-[var(--secondary-color)] bg-white rounded-full hover:bg-[var(--accent-color)] transition-all hover:shadow-lg font-[var(--font-primary)]">
+                        Sign Up
+                    </button>
+                    <button
+                        class="w-full px-6 py-3 text-white border border-white rounded-full hover:bg-white/10 transition-all font-[var(--font-primary)]">
+                        Log In
+                    </button>
+                </div> -->
                 </div>
             </div>
         </nav>
@@ -109,7 +110,7 @@
 
 
     <!-- Company Section -->
-    <section class="relative mt-[-80px] mb-6">
+    <section class="relative  mt-[-80px] mb-6">
         <div class="max-w-5xl mx-auto px-4 bg-[var(--primary-color)] fade-in p-6 rounded">
             <div class="achievement-section__wrapper">
                 <div class="flex items-center">
@@ -163,8 +164,8 @@
         </div>
     </section>
 
-    <section id="about" class="py-16 bg-gray-50">
-        <div class="container mx-auto px-6 md:px-12 lg:px-20">
+    <section id="about" class="py-16 md:pb-20">
+        <div class="max-w-5xl mx-auto px-6 md:px-12 lg:px-20">
             <div class="text-center max-w-3xl mx-auto">
                 <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
                     About <span class="text-yellow-500">Droplancer</span>
@@ -263,8 +264,17 @@
         </div>
     </section>
 
-    <section id="team" class="py-16 bg-gradient-to-b from-gray-100 to-gray-50">
-        <div class="container mx-auto px-6 text-center">
+    <section id="team" class="py-16 bg-[var(--background-color)] relative">
+
+        <!-- Top SVG Decoration -->
+        <div class="z-10 absolute top-[-10px] md:top-[-20px] lg:top-[-40px] xl:top-[-60px] 2xl:top-[-70px] w-full">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 100">
+                <path fill="#f1f2fc"
+                    d="M1260,1.65c-60-5.07-119.82,2.47-179.83,10.13s-120,11.48-180,9.57-120-7.66-180-6.42c-60,1.63-120,11.21-180,16a1129.52,1129.52,0,0,1-180,0c-60-4.78-120-14.36-180-19.14S60,7,30,7H0v93H1440V30.89C1380.07,23.2,1319.93,6.15,1260,1.65Z">
+                </path>
+            </svg>
+        </div>
+        <div class="max-w-5xl mx-auto px-6 text-center">
             <h2 class="text-4xl font-extrabold text-gray-800 mb-6">Our Team</h2>
             <p class="text-lg text-gray-600 mb-12 max-w-2xl mx-auto">
                 Meet the passionate individuals who drive our success, combining their expertise and creativity to
@@ -339,8 +349,8 @@
         </div>
     </section>
 
-    <section id="values" class="py-12 bg-gray-50">
-        <div class="container mx-auto px-6 md:px-12">
+    <section id="values" class="py-12 bg-[var(--background-color)]">
+        <div class="max-w-5xl mx-auto px-6 md:px-12">
             <div class="text-center">
                 <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Our Core Values</h2>
                 <p class="text-lg text-gray-600 max-w-2xl mx-auto">
@@ -395,10 +405,11 @@
             </div>
         </div>
     </section>
-    <section id="achievements" class="bg-primary py-16">
-        <div class="container mx-auto text-center px-6">
-            <h2 class="text-4xl font-semibold text-white mb-4">Our Achievements</h2>
-            <p class="text-xl text-gray-200 mb-8">We’re proud of the milestones we’ve achieved:</p>
+
+    <section id="achievements" class="py-16 bg-[var(--background-color)]">
+        <div class="max-w-5xl mx-auto text-center px-6">
+            <h2 class="text-4xl font-semibold text-gray-800  mb-4">Our Achievements</h2>
+            <p class="text-xl text-gray-600 mb-8">We’re proud of the milestones we’ve achieved:</p>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <div
@@ -433,10 +444,6 @@
             </div>
         </div>
     </section>
-
-
-
-
 
 
     <!-- Footer Section -->
@@ -480,17 +487,28 @@
                 </form>
                 <h4 class="font-medium text-base">Follow us</h4>
                 <div class="flex space-x-4">
+                    <!-- Facebook -->
                     <a href="#" class="flex justify-center items-center w-12 h-12 rounded-md bg-blue-600 text-white">
                         <i class="fab fa-facebook-f"></i>
                     </a>
+
+                    <!-- Twitter -->
                     <a href="#" class="flex justify-center items-center w-12 h-12 rounded-md bg-sky-400 text-white">
                         <i class="fab fa-twitter"></i>
                     </a>
+
+                    <!-- Instagram -->
                     <a href="#"
                         class="flex justify-center items-center w-12 h-12 rounded-md bg-gradient-to-br from-yellow-400 via-pink-500 to-purple-600 text-white">
                         <i class="fab fa-instagram"></i>
                     </a>
+
+                    <!-- LinkedIn -->
+                    <a href="#" class="flex justify-center items-center w-12 h-12 rounded-md bg-blue-700 text-white">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
                 </div>
+
             </div>
         </div>
         <div class="footer-bar bg-[var(--primary-color)] text-center text-gray-700 py-4 border-t mt-4">
@@ -503,7 +521,6 @@
             </div>
         </div>
     </footer>
-
 </body>
 
 </html>

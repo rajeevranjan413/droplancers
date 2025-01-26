@@ -35,7 +35,7 @@
                     </a>
                     <a href="./contact.html"
                         class="text-white hover:text-[var(--accent-color)] transition-all relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-[var(--accent-color)] after:transition-all hover:after:w-full font-[var(--font-primary)]">
-                        Let's Talk
+                        Contact
                     </a>
                 </div>
 
@@ -48,14 +48,15 @@
             <!-- Mobile Menu -->
             <div
                 class="mobile-menu fixed inset-0 bg-[var(--primary-color)] backdrop-blur-lg flex items-center justify-center md:hidden">
-                <div class="absolute top-4 right-4">
-                    <button class="close-btn text-white text-3xl">&times;</button>
+                <div class="absolute top-4 right-8">
+                    <div class="close-btn text-white text-4xl">&times;</div>
                 </div>
                 <div class="flex flex-col items-center gap-8 text-2xl font-[var(--font-primary)]">
                     <a href="/"
                         class="text-white hover:text-[var(--accent-color)] transition-all transform hover:scale-110">
                         Home
                     </a>
+
                     <a href="./services.html"
                         class="text-white hover:text-[var(--accent-color)] transition-all transform hover:scale-110">
                         Services
@@ -66,7 +67,7 @@
                     </a>
                     <a href="./contact.html"
                         class="text-white hover:text-[var(--accent-color)] transition-all transform hover:scale-110">
-                        Let's Talk
+                        Contact
                     </a>
 
                     <!-- Authentication Buttons
@@ -87,7 +88,7 @@
     </header>
 
     <!-- Hero Section -->
-    <section class=" choose-us-section relative h-screen bg-fixed bg-cover"
+    <section class=" choose-us-section relative h-screen bg-fixed bg-cover bg-center pt-16"
         style="background-image: url('./images/woman-holding-promoting-mini-globe.jpg');">
         <!-- Overlay -->
         <div class="absolute inset-0 opacity-[.9]"></div> <!-- Adjusted blue opacity -->
@@ -107,7 +108,7 @@
 
 
     <!-- Services Section -->
-    <section id="services" class="py-12 lg:py-12 choose-us-section relative font-[var(--font-primary)]">
+    <section id="services" class="pt-12 lg:pt-14 pb-16  choose-us-section relative font-[var(--font-primary)]">
         <!-- Container -->
         <div class="container mx-auto max-w-[var(--max-width)]">
             <!-- Header Section -->
@@ -282,7 +283,14 @@
     </section>
 
     <!-- Shopify Development Services Section -->
-    <section class="bg-[var(--background-color)] py-12" id="shopify-services-section">
+    <section class="bg-[var(--background-color)] py-12 relative" id="shopify-services-section">
+        <div class="z-10 absolute top-[-10px] md:top-[-20px] lg:top-[-40px] xl:top-[-60px] 2xl:top-[-70px] w-full">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 100">
+                <path fill="#f1f2fc"
+                    d="M1260,1.65c-60-5.07-119.82,2.47-179.83,10.13s-120,11.48-180,9.57-120-7.66-180-6.42c-60,1.63-120,11.21-180,16a1129.52,1129.52,0,0,1-180,0c-60-4.78-120-14.36-180-19.14S60,7,30,7H0v93H1440V30.89C1380.07,23.2,1319.93,6.15,1260,1.65Z">
+                </path>
+            </svg>
+        </div>
         <div class="max-w-5xl mx-auto px-4">
             <div class="text-center mb-8">
                 <h3
@@ -495,34 +503,36 @@
         </div>
     </section>
 
+
     <!-- Footer Section -->
     <footer class="bg-primary-color relative w-full rounded-t-3xl">
-        <div class="flex justify-between flex-wrap px-4 py-8 sm:px-6 md:p-12 xl:p-16">
+        <div class="flex justify-between flex-wrap px-4  py-8 sm:px-6 md:p-12 xl:p-16">
+
             <div class="space-y-8">
                 <h3 class="font-bold text-sm mb-4">SERVICES</h3>
                 <ul class="space-y-2">
-                    <li><a href="#">Web Development</a></li>
-                    <li><a href="#">Mobile App Development</a></li>
-                    <li><a href="#">Cloud Solutions</a></li>
-                    <li><a href="#">IT Consulting</a></li>
+                    <li><a href="#" class="">Web Development</a></li>
+                    <li><a href="#" class="">Mobile App Development</a></li>
+                    <li><a href="#" class="">Cloud Solutions</a></li>
+                    <li><a href="#" class="">IT Consulting</a></li>
                 </ul>
             </div>
             <div class="space-y-8">
                 <h3 class="font-bold text-sm mb-4">ABOUT US</h3>
                 <ul class="space-y-2">
-                    <li><a href="#">Our Story</a></li>
-                    <li><a href="#">Leadership</a></li>
-                    <li><a href="#">Careers</a></li>
-                    <li><a href="#">Partnerships</a></li>
+                    <li><a href="#" class="">Our Story</a></li>
+                    <li><a href="#" class="">Leadership</a></li>
+                    <li><a href="#" class="">Careers</a></li>
+                    <li><a href="#" class="">Partnerships</a></li>
                 </ul>
             </div>
             <div class="space-y-8">
                 <h3 class="font-bold text-sm mb-4">RESOURCES</h3>
                 <ul class="space-y-2">
-                    <li><a href="#">Case Studies</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">White Papers</a></li>
-                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#" class="">Case Studies</a></li>
+                    <li><a href="#" class="">Blog</a></li>
+                    <li><a href="#" class="">White Papers</a></li>
+                    <li><a href="#" class="">FAQs</a></li>
                 </ul>
             </div>
             <div class="flex flex-col space-y-2 mt-6 md:space-y-6">
@@ -535,14 +545,28 @@
                 </form>
                 <h4 class="font-medium text-base">Follow us</h4>
                 <div class="flex space-x-4">
-                    <a href="#" class="flex justify-center items-center w-12 h-12 rounded-md bg-blue-600 text-white"><i
-                            class="fab fa-facebook-f"></i></a>
-                    <a href="#" class="flex justify-center items-center w-12 h-12 rounded-md bg-sky-400 text-white"><i
-                            class="fab fa-twitter"></i></a>
+                    <!-- Facebook -->
+                    <a href="#" class="flex justify-center items-center w-12 h-12 rounded-md bg-blue-600 text-white">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+
+                    <!-- Twitter -->
+                    <a href="#" class="flex justify-center items-center w-12 h-12 rounded-md bg-sky-400 text-white">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+
+                    <!-- Instagram -->
                     <a href="#"
-                        class="flex justify-center items-center w-12 h-12 rounded-md bg-gradient-to-br from-yellow-400 via-pink-500 to-purple-600 text-white"><i
-                            class="fab fa-instagram"></i></a>
+                        class="flex justify-center items-center w-12 h-12 rounded-md bg-gradient-to-br from-yellow-400 via-pink-500 to-purple-600 text-white">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+
+                    <!-- LinkedIn -->
+                    <a href="#" class="flex justify-center items-center w-12 h-12 rounded-md bg-blue-700 text-white">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
                 </div>
+
             </div>
         </div>
         <div class="footer-bar bg-[var(--primary-color)] text-center text-gray-700 py-4 border-t mt-4">
@@ -550,7 +574,7 @@
                 <p class="text-sm">
                     Copyright © <span id="current-year">
                         <script>document.write(new Date().getFullYear());</script>
-                    </span> Droplancer. All Rights Reserved.
+                    </span> Droplancers. All Rights Reserved.
                 </p>
             </div>
         </div>
