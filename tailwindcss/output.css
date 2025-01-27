@@ -850,6 +850,26 @@ video {
   width: 12gi0px;
 }
 
+.w-\[400px\] {
+  width: 400px;
+}
+
+.w-\[600px\] {
+  width: 600px;
+}
+
+.w-\[676px\] {
+  width: 676px;
+}
+
+.w-\[768px\] {
+  width: 768px;
+}
+
+.w-\[580px\] {
+  width: 580px;
+}
+
 .max-w-2xl {
   max-width: 42rem;
 }
