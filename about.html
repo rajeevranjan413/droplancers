@@ -96,15 +96,15 @@
     <section class="relative h-screen bg-fixed bg-cover"
         style="background-image: url('./images/job-5382501_1920.jpg');">
         <!-- Overlay -->
-        <div class="absolute bg-[rgb(32 41 66 / 70%)] inset-0 opacity-[.4]"></div> <!-- Adjusted blue opacity -->
+        <div class="absolute inset-0 bg-black bg-opacity-50"></div> <!-- Adjusted blue opacity -->
 
         <!-- Content -->
         <div class="relative z-10 flex items-center justify-center h-full px-4 text-center">
             <div class="text-text-color max-w-3xl">
-                <h1 class="text-4xl font-bold md:text-6xl leading-tight font-primary">
+                <h1 class="text-5xl  font-extrabold leading-tight font-primary fade-in">
                     About Us
                 </h1>
-                <p class="mt-4 text-lg md:text-2xl leading-relaxed font-secondary">
+                <p class="mt-4 text-xl  leading-relaxed font-secondary fade-in">
                     At Droplancer, we specialize in delivering cutting-edge software solutions that drive
                     innovation and transform businesses. With a passionate team of experts, we offer a wide range of IT
                     services tailored to meet the unique challenges of modern enterprises.
@@ -135,28 +135,28 @@
                             <div class="grid grid-cols-2 gap-5 md:grid-cols-4">
                                 <!-- Counter Item 1 -->
                                 <div class="text-center">
-                                    <h2 class="text-3xl font-bold text-white counter__item_count" data-count="12">12
+                                    <h2 class="text-3xl font-bold text-white counter__item_count" data-count="12">8+
                                     </h2>
                                     <h6 class="text-sm text-gray-300 mt-3">Years Of Experience</h6>
                                 </div>
 
                                 <!-- Counter Item 2 -->
                                 <div class="text-center">
-                                    <h2 class="text-3xl font-bold text-white counter__item_count" data-count="2500">2500
+                                    <h2 class="text-3xl font-bold text-white counter__item_count" data-count="2500">200+
                                     </h2>
                                     <h6 class="text-sm text-gray-300 mt-3">Websites Launched</h6>
                                 </div>
 
                                 <!-- Counter Item 3 -->
                                 <div class="text-center">
-                                    <h2 class="text-3xl font-bold text-white counter__item_count" data-count="500">500
+                                    <h2 class="text-3xl font-bold text-white counter__item_count" data-count="500">500+
                                     </h2>
                                     <h6 class="text-sm text-gray-300 mt-3">Satisfied Customers</h6>
                                 </div>
 
                                 <!-- Counter Item 4 -->
                                 <div class="text-center">
-                                    <h2 class="text-3xl font-bold text-white counter__item_count" data-count="2000">2000
+                                    <h2 class="text-3xl font-bold text-white counter__item_count" data-count="2000">500+
                                     </h2>
                                     <h6 class="text-sm text-gray-300 mt-3">Projects Completed</h6>
                                 </div>
@@ -268,9 +268,10 @@
         </div>
     </section>
 
+    <!-- 
     <section id="team" class="py-16 bg-[var(--background-color)] relative">
 
-        <!-- Top SVG Decoration -->
+       
         <div class="z-10 absolute top-[-10px] md:top-[-20px] lg:top-[-40px] xl:top-[-60px] 2xl:top-[-70px] w-full">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 100">
                 <path fill="#f1f2fc"
@@ -286,7 +287,7 @@
             </p>
 
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10">
-                <!-- Team Member Card -->
+              
                 <div
                     class="relative bg-white shadow-lg rounded-3xl p-6 transition-transform hover:-translate-y-2 hover:shadow-2xl">
                     <div class="absolute -top-10 left-1/2 transform -translate-x-1/2">
@@ -302,7 +303,7 @@
                     </div>
                 </div>
 
-                <!-- Team Member Card -->
+              
                 <div
                     class="relative bg-white shadow-lg rounded-3xl p-6 transition-transform hover:-translate-y-2 hover:shadow-2xl">
                     <div class="absolute -top-10 left-1/2 transform -translate-x-1/2">
@@ -318,7 +319,7 @@
                     </div>
                 </div>
 
-                <!-- Team Member Card -->
+              
                 <div
                     class="relative bg-white shadow-lg rounded-3xl p-6 transition-transform hover:-translate-y-2 hover:shadow-2xl">
                     <div class="absolute -top-10 left-1/2 transform -translate-x-1/2">
@@ -334,7 +335,6 @@
                     </div>
                 </div>
 
-                <!-- Team Member Card -->
                 <div
                     class="relative bg-white shadow-lg rounded-3xl p-6 transition-transform hover:-translate-y-2 hover:shadow-2xl">
                     <div class="absolute -top-10 left-1/2 transform -translate-x-1/2">
@@ -351,9 +351,20 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
-    <section id="values" class="py-12 bg-[var(--background-color)]">
+    <section id="values" class="py-12 bg-[var(--background-color)] relative">
+
+        <!-- Top SVG Decoration -->
+        <div id="services"
+            class="z-10 absolute top-[-10px] md:top-[-20px] lg:top-[-40px] xl:top-[-60px] 2xl:top-[-70px] w-full">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 100">
+                <path fill="#f1f2fc"
+                    d="M1260,1.65c-60-5.07-119.82,2.47-179.83,10.13s-120,11.48-180,9.57-120-7.66-180-6.42c-60,1.63-120,11.21-180,16a1129.52,1129.52,0,0,1-180,0c-60-4.78-120-14.36-180-19.14S60,7,30,7H0v93H1440V30.89C1380.07,23.2,1319.93,6.15,1260,1.65Z">
+                </path>
+            </svg>
+        </div>
+
         <div class="max-w-5xl mx-auto px-6 md:px-12">
             <div class="text-center">
                 <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Our Core Values</h2>
@@ -418,8 +429,8 @@
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <div
                     class="flex flex-col items-center bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition-shadow">
-                    <div class="w-20 h-20 bg-yellow-500 text-white rounded-full flex items-center justify-center mb-4">
-                        <i class="fas fa-users text-2xl"></i>
+                    <div class="w-20 h-20 bg-gray-100 text-white rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-users text-2xl text-yellow-500"></i>
                     </div>
                     <h4 class="text-xl font-semibold text-primary mb-2">100+ Satisfied Clients</h4>
                     <p class="text-gray-600">We’ve earned the trust of clients across the globe with our expertise and
@@ -428,8 +439,8 @@
 
                 <div
                     class="flex flex-col items-center bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition-shadow">
-                    <div class="w-20 h-20 bg-yellow-500 text-white rounded-full flex items-center justify-center mb-4">
-                        <i class="fas fa-bullhorn text-2xl"></i>
+                    <div class="w-20 h-20 bg-gray-100 text-white rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-bullhorn text-2xl text-yellow-500"></i>
                     </div>
                     <h4 class="text-xl font-semibold text-primary mb-2">Successful Digital Marketing</h4>
                     <p class="text-gray-600">Over 50 businesses have achieved remarkable results through our marketing
@@ -438,8 +449,8 @@
 
                 <div
                     class="flex flex-col items-center bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition-shadow">
-                    <div class="w-20 h-20 bg-yellow-500 text-white rounded-full flex items-center justify-center mb-4">
-                        <i class="fas fa-laptop-code text-2xl"></i>
+                    <div class="w-20 h-20 bg-gray-100 text-white rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-laptop-code text-2xl text-yellow-500"></i>
                     </div>
                     <h4 class="text-xl font-semibold text-primary mb-2">500+ Websites Designed</h4>
                     <p class="text-gray-600">From e-commerce to corporate sites, we've optimized digital experiences for
