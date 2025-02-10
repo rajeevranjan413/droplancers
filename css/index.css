@@ -10,7 +10,7 @@
   --accent-color: #ffc107;
   --border-color: #3a456a;
   --max-width: 1400px;
-  --header-height: 70px;
+  --header-height: 80px;
   --font-primary: "IBM Plex Sans", sans-serif;
   --font-secondary: "Merriweather", serif;
 }
@@ -34,6 +34,7 @@ body {
     height: auto;
   }
 }
+
 h1,
 h2,
 h3,

@@ -649,6 +649,21 @@ video {
   margin-right: auto;
 }
 
+.-mx-4 {
+  margin-left: -1rem;
+  margin-right: -1rem;
+}
+
+.-mx-6 {
+  margin-left: -1.5rem;
+  margin-right: -1.5rem;
+}
+
+.-mx-8 {
+  margin-left: -2rem;
+  margin-right: -2rem;
+}
+
 .mb-0 {
   margin-bottom: 0px;
 }
@@ -725,6 +740,18 @@ video {
   margin-top: -80px;
 }
 
+.-mr-4 {
+  margin-right: -1rem;
+}
+
+.-mr-6 {
+  margin-right: -1.5rem;
+}
+
+.-ml-6 {
+  margin-left: -1.5rem;
+}
+
 .block {
   display: block;
 }
@@ -761,6 +788,10 @@ video {
   height: 6rem;
 }
 
+.h-\[var\(--header-height\)\] {
+  height: var(--header-height);
+}
+
 .h-auto {
   height: auto;
 }
@@ -771,6 +802,10 @@ video {
 
 .h-screen {
   height: 100vh;
+}
+
+.h-\[80px\] {
+  height: 80px;
 }
 
 .min-h-screen {
@@ -797,8 +832,8 @@ video {
   width: 14rem;
 }
 
-.w-\[120px\] {
-  width: 120px;
+.w-\[100px\] {
+  width: 100px;
 }
 
 .w-\[150px\] {
@@ -824,6 +859,30 @@ video {
 
 .w-full {
   width: 100%;
+}
+
+.w-\[120px\] {
+  width: 120px;
+}
+
+.w-\[140px\] {
+  width: 140px;
+}
+
+.w-\[250px\] {
+  width: 250px;
+}
+
+.w-\[70\%\] {
+  width: 70%;
+}
+
+.w-\[80\%\] {
+  width: 80%;
+}
+
+.w-\[90\%\] {
+  width: 90%;
 }
 
 .max-w-2xl {
@@ -1361,6 +1420,22 @@ video {
   padding-top: 96px;
 }
 
+.pt-\[100px\] {
+  padding-top: 100px;
+}
+
+.pt-\[110px\] {
+  padding-top: 110px;
+}
+
+.pt-\[120px\] {
+  padding-top: 120px;
+}
+
+.pb-20 {
+  padding-bottom: 5rem;
+}
+
 .text-center {
   text-align: center;
 }
@@ -1545,10 +1620,6 @@ video {
   color: rgb(234 179 8 / var(--tw-text-opacity, 1));
 }
 
-.opacity-\[\.4\] {
-  opacity: .4;
-}
-
 .opacity-\[\.9\] {
   opacity: .9;
 }
@@ -1618,6 +1689,10 @@ video {
 
 .ease-in-out {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.ease-out {
+  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
 }
 
 .after\:absolute::after {
@@ -1862,6 +1937,10 @@ video {
     width: auto;
   }
 
+  .md\:w-full {
+    width: 100%;
+  }
+
   .md\:max-w-lg {
     max-width: 32rem;
   }
@@ -1932,6 +2011,10 @@ video {
 
   .md\:pt-8 {
     padding-top: 2rem;
+  }
+
+  .md\:pt-12 {
+    padding-top: 3rem;
   }
 
   .md\:text-left {
@@ -2009,6 +2092,11 @@ video {
     padding-bottom: 3rem;
   }
 
+  .lg\:py-14 {
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+  }
+
   .lg\:pt-12 {
     padding-top: 3rem;
   }
@@ -2042,6 +2130,10 @@ video {
 
   .xl\:w-9\/12 {
     width: 75%;
+  }
+
+  .xl\:w-full {
+    width: 100%;
   }
 
   .xl\:p-16 {
