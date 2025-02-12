@@ -13,8 +13,3 @@ Dorplancer is a cutting-edge freelancing platform that connects skilled professi
 
 ## Technologies Used
 - **Frontend**: HTML, CSS, JavaScript
-
-## Installation & Setup
-1. Clone the repository:
-   ```sh
-   git clone https://github.com/yourusername/dorplancer.git
